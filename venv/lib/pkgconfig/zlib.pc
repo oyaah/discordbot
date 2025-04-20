@@ -1,0 +1,13 @@
+prefix=/Users/yashbansal/Documents/discordbot/venv
+exec_prefix=/Users/yashbansal/Documents/discordbot/venv
+libdir=/Users/yashbansal/Documents/discordbot/venv/lib
+sharedlibdir=/Users/yashbansal/Documents/discordbot/venv/lib
+includedir=/Users/yashbansal/Documents/discordbot/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
