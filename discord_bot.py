@@ -121,22 +121,6 @@ async def post_job_listings_to_discord(formatted_messages_json: str) -> bool:
         print(f"Error posting to Discord: {e}")
         return False
 
-# Discord Publisher Tool that can be used by CrewAI
-class DiscordPublisherTool:
-    name = "Discord Publisher"
-    description = "Posts job listings to Discord"
-    
-    def _run(self, formatted_messages: str) -> str:
-        """Post formatted messages to Discord"""
-        try:
-            success = asyncio.run(post_job_listings_to_discord(formatted_messages))
-            if success:
-                return f"Successfully posted job listings to Discord"
-            else:
-                return "Failed to post job listings to Discord"
-        except Exception as e:
-            return f"Error in Discord Publisher Tool: {e}"
-
 # Stand-alone test
 if __name__ == "__main__":
     # Test the bot directly
