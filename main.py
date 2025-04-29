@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from crew import run_job_scraping
+from crewai import run_job_scraping
 
 # Load environment variables
 load_dotenv()
